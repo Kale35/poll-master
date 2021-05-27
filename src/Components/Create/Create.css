@@ -1,0 +1,52 @@
+.Create {
+  margin-top: 30px;
+  margin-left: 30px;
+  position: relative;
+}
+
+.Create__Title {
+  position: relative;
+  background-color: #888888;
+  color: whitesmoke;
+  border: none;
+  width: 120%;
+  height: 50px;
+  border: solid;
+  border-color: rgb(104, 104, 104);
+  border-width: 2px;
+  padding-left: 10px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.Create__Title::placeholder {
+  color: whitesmoke;
+  opacity: 0.5;
+}
+
+.Create__Options {
+  display: flex;
+}
+
+.Create__Option {
+  position: relative;
+  background-color: #888888;
+  color: whitesmoke;
+  border: none;
+  border: solid;
+  height: 30px;
+  width: 400px;
+  border-color: rgb(104, 104, 104);
+  border-width: 2px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.Create__Option::placeholder {
+  color: whitesmoke;
+  opacity: 0.5;
+}
+
+.Create__Color {
+  background-color: #888888;
+}
