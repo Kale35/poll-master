@@ -26,6 +26,14 @@
 
 .Create__Options {
   display: flex;
+  animation-duration: 0.5s;
+  animation-name: animationForCreateOptions;
+  transition: all 0.25s ease-in-out;
+}
+
+/*You can delete this if u want*/
+.Create__Options:hover {
+  transform: scale(1.05);
 }
 
 .Create__Option {
@@ -54,4 +62,27 @@
   width: 15%;
   height: 35px;
   float: left;
+}
+
+.Create__Buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Create__Submit {
+  align-self: center;
+}
+
+@keyframes animationForCreateOptions {
+  0% {
+    max-height: 0px;
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    max-height: 500px;
+    transform: scale(1);
+    opacity: 1;
+  }
 }
