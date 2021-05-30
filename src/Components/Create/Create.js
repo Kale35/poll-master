@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "./Create.css";
 import PollTitle from "./Create-Components/PollTitle";
 import PollOption from "./Create-Components/PollOption";
-import PollSubmit from "./PollSubmit";
-import AddMoreOptionsButton from "./AddMoreOptionsButton";
+import PollSubmit from "./Create-Components/PollSubmit";
+import AddMoreOptionsButton from "./Create-Components/AddMoreOptionsButton";
 
 function Create() {
-  const [pollAmount, setPollAmount] = useState(3);
+  const [pollAmount, setPollAmount] = useState(5);
   const [question, setQuestion] = useState("");
   const [answers, setAnswers] = useState([
     "", "", ""
@@ -50,13 +50,12 @@ function Create() {
         {Array.from(Array(pollAmount), (e, i) => (
           <PollOption key={i} update={(ev) => update(i, ev)} />
         ))}
-        <div className="Create__Buttons">
-          <PollSubmit />
-          <AddMoreOptionsButton
+        <AddMoreOptionsButton
             pollAmount={pollAmount}
             setPollAmount={setPollAmount}
           />
-        </div>
+        <PollSubmit/>
+      
       </form>
     </div>
   );

@@ -21,13 +21,13 @@ function PollOption(props) {
                 onChange={(e) => update(e)}
             ></input>
             <select className="Create__Color">
-                <option value="Blue">Blue</option>
-                <option value="Red">Red</option>
-                <option value="Green">Green</option>
-                <option value="Pink">Pink</option>
-                <option value="Orange">Orange</option>
-                <option value="Gold">Gold</option>
-                <option value="Black">Black</option>
+                <option className="Create__Blue" value="Blue">Blue</option>
+                <option className="Create__Red" value="Red">Red</option>
+                <option className="Create__Green" value="Green">Green</option>
+                <option className="Create__Purple" value="Purple">Purple</option>
+                <option className="Create__Orange" value="Orange">Orange</option>
+                <option className="Create__Gold" value="Gold">Gold</option>
+                <option className="Create__Black" value="Black">Black</option>
             </select>
         </div>
     );

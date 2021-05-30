@@ -31,10 +31,17 @@
   transition: all 0.25s ease-in-out;
 }
 
-/*You can delete this if u want*/
-.Create__Options:hover {
-  transform: scale(1.05);
+.Create__Options {
+  display: flex;
+  animation-duration: 0.5s;
+  animation-name: animationForCreateOptions;
+  transition: all 0.25s ease-in-out;
 }
+
+/*You can delete this if u want*/
+/*.Create__Options:hover {
+  transform: scale(1.05);
+}*/
 
 .Create__Option {
   position: relative;
@@ -62,15 +69,61 @@
   width: 15%;
   height: 35px;
   float: left;
+  color: blue;
 }
 
-.Create__Buttons {
-  display: flex;
-  justify-content: flex-end;
+.Create__Color > .Create__Blue {
+  color: blue;
 }
 
-.Create__Submit {
-  align-self: center;
+.Create__Color > .Create__Red {
+  color: red;
+}
+
+.Create__Color > .Create__Green {
+  color: green;
+}
+
+.Create__Color > .Create__Purple {
+  color: purple;
+}
+
+.Create__Color > .Create__Orange {
+  color: orange;
+}
+
+.Create__Color > .Create__Gold {
+  color: gold;
+}
+
+.Create__Color > .Create__Black {
+  color: black;
+}
+
+.Create__Color .Create__AddMore > .Create__Icon {
+  color: whitesmoke;
+}
+
+.Create__AddMore > .Create__Icon:hover {
+  color: whitesmoke;
+}
+
+.Create__Submit > .Create__SubmitButton {
+  position: relative;
+  border: none;
+  color: whitesmoke;
+  background-color: #0270ff;
+  margin-top: 40px;
+  width: 100%;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+
+.Create__Submit > .Create__SubmitButton:hover {
+  color: whitesmoke;
+  background-color: #529af8;
 }
 
 @keyframes animationForCreateOptions {
