@@ -13,3 +13,24 @@
   align-self: center;
   margin-left: 50vh;
 }
+
+@media screen and (max-width: 800px) {
+  .App__Container {
+    background-color: #5e5e5e;
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    margin-left: 1px;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .App__Container {
+    background-color: #5e5e5e;
+    height: 80%;
+    width: 100%;
+    align-self: center;
+    margin-left: 1px;
+   
+  }
+} */

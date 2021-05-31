@@ -41,22 +41,25 @@ function Create() {
       // console.log(content);
     }
   }
+  
 
   return (
     <div className="Create">
       <form className="Create__Form" onSubmit={handleSubmit}>
         <PollTitle question={(ev) => setQuestion(ev)} />
-
-        {Array.from(Array(pollAmount), (e, i) => (
-          <PollOption key={i} update={(ev) => update(i, ev)} />
-        ))}
-        <AddMoreOptionsButton
-            pollAmount={pollAmount}
-            setPollAmount={setPollAmount}
-          />
+        <div className="Create__PollOptions">
+          {Array.from(Array(pollAmount), (e, i) => (
+            <PollOption key={i} update={(ev) => update(i, ev)} />
+          ))}
+          </div>
+          <AddMoreOptionsButton
+              pollAmount={pollAmount}
+              setPollAmount={setPollAmount}
+            />
         <PollSubmit/>
       
       </form>
+      
     </div>
   );
 }
