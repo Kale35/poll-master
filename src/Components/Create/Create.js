@@ -41,7 +41,7 @@ function Create() {
       // console.log(content);
     }
   }
-  
+
 
   return (
     <div className="Create">
@@ -51,15 +51,15 @@ function Create() {
           {Array.from(Array(pollAmount), (e, i) => (
             <PollOption key={i} update={(ev) => update(i, ev)} />
           ))}
-          </div>
-          <AddMoreOptionsButton
-              pollAmount={pollAmount}
-              setPollAmount={setPollAmount}
-            />
-        <PollSubmit/>
-      
+        </div>
+        <AddMoreOptionsButton
+          pollAmount={pollAmount}
+          setPollAmount={setPollAmount}
+        />
+        <PollSubmit />
+
       </form>
-      
+
     </div>
   );
 }

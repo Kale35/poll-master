@@ -3,8 +3,6 @@
 }
 
 .Create {
-  margin-top: 30px;
-  margin-left: 30px;
   position: relative;
 }
 
@@ -38,12 +36,14 @@
 .Create__PollOptions {
   max-height: 255px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /*You can delete this if u want*/
-/*.Create__Options:hover {
+.Create__Options:hover {
   transform: scale(1.05);
-}*/
+  margin-left: 60px;
+}
 
 .Create__Option {
   position: relative;
@@ -68,8 +68,8 @@
 .Create__Color {
   background-color: #888888;
   margin-bottom: 15px;
+  margin-left: 5px;
   width: 15%;
-  height: 35px;
   float: left;
   color: blue;
 }
@@ -116,7 +116,8 @@
   color: whitesmoke;
   background-color: #0270ff;
   margin-top: 20px;
-  width: 100%;
+  /* width: 100%; */
+  padding: 0px 20px;
   height: 60px;
   border-radius: 50px;
   font-size: 35px;
