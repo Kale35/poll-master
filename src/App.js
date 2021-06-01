@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 import Navbar from './Components/HomeComponents/Navbar';
 import Wrapper from './Components/HomeComponents/Wrapper';
 import Footer from './Components/HomeComponents/Footer';
-import Poll from './Pages/Poll';
+import Poll from './Pages/Poll/Poll';
 function App() {
   return (
     <>

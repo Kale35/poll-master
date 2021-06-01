@@ -6,10 +6,19 @@ export default function Home() {
 
 	const [data, setData] = useState([])
 
+	// useEffect(async () => {
+	// 	const resp = await fetch("http://localhost:1234/poll/random/7")
+	// 	setData(await resp.json())
+	// }, [])
+
+
+	//
 	useEffect(async () => {
-		const resp = await fetch("http://localhost:1234/poll/random/7")
-		setData(await resp.json())
+		const response = await fetch("http://localhost:1234/getAllPolls");
+		const data = await response.json();
+		setData(data);
 	}, [])
+
 
 	const showData = () => {
 		console.log(data)

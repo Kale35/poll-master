@@ -1,0 +1,20 @@
+.Poll__Div {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid blue;
+}
+
+.Poll__Info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid mediumpurple;
+    font-size: 32px;
+}
+
+.Poll__Chart {
+    /*border: 1px solid black;*/
+    width: 30%;
+    height: 500px;
+}

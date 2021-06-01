@@ -20,6 +20,7 @@ function Create() {
 
   const handleSubmit = async e => {
     // e.preventDefault();
+
     const tmpAnswers = [];
     if (question.length > 2 && answers.length > 0) {
       answers.forEach(e => {
